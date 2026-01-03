@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f3640;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2f3640;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #40739e;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #40739e;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #273c75;
+}
+
+    </style>
+</head>
+<body>
+    <h2>you can update yor datas here</h2>
+
+     <form action="/update/<%= edit._id%>" method="post">
+        <label for="firstName">first name</label>
+        <input type="text" name="firstName" id="fname" value="<%= edit.firstName%>" required>
+        <label for="userName">userName</label>
+        <input type="text" name="userName" id="userName" value="<%= edit.userName%>" required>
+        <label for="age">age</label>
+        <input type="age" name="age" value="<%= edit.age%>" required>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" value="<%= edit.email%>" required>
+        <label for="password">password</label>
+        <input type="password" name="password" value="<%= edit.password%>" required>
+        <button type="submit">save</button>
+        
+    </form>
+   
+</body>
+</html>

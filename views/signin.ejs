@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 55%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 55%;
+}
+
+button.btn {
+    background-color: #4a90e2;
+    color: #fff;
+    margin-top: 10px;
+}
+
+button.btn:hover {
+    background-color: #357abd;
+}
+
+button.secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-top: 10px;
+}
+
+button.secondary:hover {
+    background-color: #e0e0e0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Sign In Page</h1>
+        <form action="/signin" method="post">
+            <label for="firstName">First Name</label><br>
+            <input type="text" name="firstName" id="firstName" required><br>
+
+            <label for="userName">Username</label><br>
+            <input type="text" name="userName" id="userName" required><br>
+
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required><br>
+
+            <button type="submit" class="btn submit">Sign In</button>
+        </form>
+
+        <a href="/fetching"><button class="btn fetch">View All Users</button></a>
+    </div>
+</body>
+</html>

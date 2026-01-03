@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles/home.css">
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 50px 20px 20px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 10px 0;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Portal</h1>
+        <p>Manage your students easily and efficiently</p>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80" alt="Add Student">
+            <h3>Add Student</h3>
+            <p>Add new students to your database.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581091012184-1d5c4c7f5e1a?auto=format&fit=crop&w=400&q=80" alt="View Students">
+            <h3>View Students</h3>
+            <p>Check all student records at a glance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" alt="Profile">
+            <h3>Profile</h3>
+            <p>Manage your profile and settings.</p>
+        </div>
+    </section>
+</body>
+</html>
